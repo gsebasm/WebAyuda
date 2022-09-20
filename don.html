@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" class="css">
+  <script src="https://kit.fontawesome.com/a6d0149aed.js" crossorigin="anonymous"></script>
+  <script defer src="index.js"></script>
+
+  <title>Eventos</title>
+</head>
+
+<body>
+  <header class="lodearriba">
+
+    <nav class="navy">
+      <a href="#" class="logo navy-link"><img src="imagenes/log.jpg" width="100" height="100" line-height="80"></a>
+      <button class="navy-torao">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="navy-menu navy-menu_vis">
+        <li class="navy-menu-item"><a href="index.html" class="navy-menu-link navy-link">Nosotras</a>
+        </li>
+        <li class="navy-menu-item"><a href="eventos.html" class="navy-menu-link navy-link">Eventos</a>
+        </li>
+        <li class="navy-menu-item"><a href="don.html"
+            class="navy-menu-link navy-link navy-menu-link_active">Donaciones</a>
+        </li>
+        <li class="navy-menu-item"><a href="usuarios.html" class="navy-menu-link navy-link">Usuarios</a>
+        </li>
+
+
+      </ul>
+    </nav>
+
+  </header>
+  <br><br>
+
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar palabra clave" aria-label="Search"
+          style="width: 1000px;  ">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+      <button type="button" class="btn btn-primary btn-lg"
+        style="background-color: rgb(86, 168, 168);border-color: rgb(0, 0, 0);">Agregar nueva donación</button>
+    </div>
+  </nav>
+  <br>
+
+
+
+  <table class="table table-bordered">
+
+
+    <thead>
+      <tr class="table-success">
+
+        <th scope="col">id</th>
+        <th scope="col">Donacion</th>
+        <th scope="col">Beneficiario</th>
+        <th scope="col">Cantidad</th>
+
+
+      </tr>
+    <tbody>
+
+      <tr>
+        <th scope="row"> 1</th>
+        <td>Silla de Ruedas</td>
+        <td>------</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th scope="row"> 2</th>
+        <td>Camillas</td>
+        <td>------</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th scope="row"> 3</th>
+        <td>Cama de Hospital</td>
+        <td>------</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th scope="row"> 4</th>
+        <td>Tánques de Oxigeno</td>
+        <td>------</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th scope="row"> 5</th>
+        <td>Muletas</td>
+        <td>------</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th scope="row"> 6</th>
+        <td>Protesis de Brazo</td>
+        <td>------</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th scope="row"> 7</th>
+        <td>Protesis de Pierna</td>
+        <td>------</td>
+        <td>1</td>
+      </tr>
+    </tbody>
+    </thead>
+  </table>
+
+
+
+  <div class="cartas">
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+      style="width: 1000px; margin: 0 auto;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/silla-ruedas.jpg" class="d-block w-100" alt="..." style="width: 1000px; height: 600px;">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/cama.jpg" class="d-block w-100" alt="..." style="width:1000px; height: 600px;">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/muletas.jpg" class="d-block w-100" alt="..." style="width: 1000px; height: 600px;">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/protbra.jpg" class="d-block w-100" alt="..." style="width: 1000px; height: 600px;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

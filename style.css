@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 90px 20px 0;
+}
+
+.lodearriba {
+    background-color: rgb(54, 141, 151);
+    height: 120px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navy {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.navy-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+.logo {
+
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 120px;
+}
+
+.logo-navy-link {
+
+    font-size: 38px;
+    margin: 0 10px;
+    line-height: 120px;
+    text-transform: uppercase;
+    width: max-content;
+
+}
+
+.navy-menu {
+
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.navy-menu-item {
+
+    font-size: 22px;
+    margin: 0 10px;
+    line-height: 120px;
+    text-transform: none;
+    width: max-content;
+}
+
+.navy-menu-link {
+    
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.navy-menu-link:hover,
+.navy-menu-link_active {
+    background-color: rgb(141, 191, 197);
+    transition: 0.5s;
+}
+
+
+
+.has-text-align-center {
+
+
+    text-align: center;
+
+}
+
+.accordion {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    
+    
+
+}
+
+.card {
+
+
+    text-align: center;
+
+
+}
+
+.cartas {
+
+    margin: 100px auto 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+
+
+
+}
+
+.navy-torao {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    cursor: pointer;
+    display: none;
+
+
+}
+
+@media (max-width: 768px) {
+
+    .lodearriba {
+
+        height: 120px; 
+
+    }
+
+
+
+    .logo {
+
+        font-size: 25px;
+
+        padding: 0 20px;
+        line-height: 100px;
+    }
+
+
+
+    .navy-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: rgb(10, 50, 54);
+        position: fixed;
+        left: 0;
+        top: 120px;
+        width: 100%;
+        padding: 20px 0;
+     
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0, 3s;
+
+       
+    }
+
+    .navy-menu-item {
+
+        font-size: 25px;
+
+
+        line-height: 110px;
+
+    }
+
+
+    .navy-menu-link:hover,
+    .navy-menu-link_active {
+        background: none;
+        color: aliceblue;
+    }
+
+    .navy-torao {
+        display: block;
+    }
+
+    .navy-menu_vis {
+        left: 0;
+
+
+    }
+    .nav-toggle:focus:not(:focus-visible){
+
+        outline: none;
+    }
+
+
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #f3f3f3;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(150, 204, 206), rgb(70, 156, 145));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(184, 223, 221), rgb(48, 148, 155))
+}
+
+
+#div1 {
+    float: left;
+    padding: 10px;
+    color: #fff;
+    width: 300px;
+    background: rgb(184, 223, 221);
+    margin: 40px;
+}
+
+#div2 {
+    float: left;
+    padding: 10px;
+    color: #fff;
+    width: 300px;
+    margin: 40px;
+    background-color: rgb(184, 223, 221);
+}
+
+#div3 {
+    float: left;
+    padding: 10px;
+    color: #fff;
+    width: 300px;
+    margin: 40px;
+    background-color: rgb(184, 223, 221);
+}
+
+#contenedor {
+    background-color: rgb(228, 245, 247);
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+    margin: 20px;
+  }
+  
+  .flex-item-middle {
+    background-color: black;
+    padding: 10px;
+    flex: 50%;
+    margin: 20px;
+    color: #fff;
+  }
+  .flex-item-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+    margin: 20px;
+  }
+  
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
